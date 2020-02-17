@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="registration.css">
-    
+
 </head>
 <body>
 <header class="main-header">
@@ -38,36 +39,21 @@
     </nav>
 </header>
 
+<?php
+
+
+?>
+
 <main class="register-page">
-    <h1 class="register-title">Please register to create your account.</h1>
-    <form name="registerForm" action="" class="register-form" onsubmit="return validateFields()" method="post">
-        <label for="title">Title</label>
-        <select id="title" aria-label="Title">
-            <option value="mr">Mr.</option>
-            <option value="mrs">Mrs.</option>
-            <option value="ms">Ms.</option>
-            <option value="other">Other</option>
-            <option value="prefer-not-to-say">Prefer not to say</option>
-        </select>
-        <label for="first-name">First name</label>
-        <input name="firstName" type="text" id="first-name" aria-label="First Name">
-        <label for="last-name">Last name</label>
-        <input name="lastName" type="text" id="last-name" aria-label="Last Name">
-        <label for="email" aria-label="email">E-Mail</label>
-        <input name="emailAddress" id="email" aria-label="Email">
-        <label for="password">Password</label>
-        <input type="password" id="password" aria-label="password">
-        <div class="agree-terms__div">
-            <input class="agree-terms__checkbox" type="checkbox" id="agree-terms" aria-label="Agree Terms checkbox">
-            <label id="agree-terms__label" for="agree-terms">Agree to
-                <a href="#">Terms &amp; Conditions</a>
-            </label>
-        </div>
-        <button type="submit" class="button" aria-label="Sign up button">Sign Up</button>
-    </form>
+    <h1 class="register-title">Welcome to Pencils Pencils Pencils!!!</h1>
+
 </main>
 
-
+<?php
+//function printFormResults($array) {
+////    print_r($array);
+////};
+?>
 
 <footer class="main-footer">
     <nav>
@@ -82,7 +68,6 @@
     </nav>
 </footer>
 
-<script src="registration.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04da5acc-477b-42b3-adab-6e988a46f251" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/registration/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP_HW4_Answers/hw4_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/php_hw4_answers/hw4_styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP_HW4_Answers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/php_hw4_answers/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/registration/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/registration/registration.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/registration/registration.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1XwH25DbLAFD6Rb7hrXnEJKlUf7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -41,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581958299988</updated>
       <workItem from="1581958301288" duration="1262000" />
-      <workItem from="1581962609177" duration="23000" />
+      <workItem from="1581962609177" duration="2605000" />
     </task>
     <servers />
   </component>
@@ -60,5 +68,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="351" y="69" key="#CLI_Interpreters" timestamp="1581983194530">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="351" y="69" key="#CLI_Interpreters/0.0.1536.824@0.0.1536.824" timestamp="1581983194530" />
+    <state x="477" y="5" key="#PHP" timestamp="1581983198018">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="5" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1581983198018" />
+    <state x="605" y="338" key="NewPhpFileDialog" timestamp="1581982125502">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="605" y="338" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1581982125502" />
   </component>
 </project>
