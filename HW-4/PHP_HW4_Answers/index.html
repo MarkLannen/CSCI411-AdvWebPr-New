@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>PencilsPencilsPencils</title>
+    <link rel="shortcut icon" href="../images/ppp-logo-favicon-20px.png">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="hw4_styles.css">
+</head>
+<body>
+<header class="main-header">
+    <div>
+        <a href="index.html" class="main-header__brand">
+            <img src="../images/ppp-logo-75px.png" alt="Pencils Pencils Pencils logo">
+        </a>
+    </div>
+    <nav class="main-nav">
+        <ul class="main-nav__items">
+            <li class="main-nav__item">
+                <a href="../products/index.html">Products</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="../shopping_cart/index.html">Shopping Cart</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="../login/index.html">Login</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cta">
+                <a href="../registration/index.html">Registration</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="hw4_mainSection">
+    <h1>Answers for Homework 4</h1>
+    <ol>
+        <li><p>Q: What are the different methods of concatenation and to what data types (and literals) do they
+            apply?</p>
+            <p>A: There are 2 concatenation methods for strings.
+                <ul>
+                    <li>
+                        The "." operator concatenates two strings together. Returns concatenation of right and left argument.
+                    </li>
+                    <li>
+                        ".=" appends the argument on the right to the argument on the left.
+                    </li>
+                </ul>
+            </p>
+        </li>
+        <li><p>Q: Describe at least three different ways to declare and initialize an array</p>
+            <ol>
+                <li>Array function: $fruit = array('apples', 'oranges', 'bananas');</li>
+                <li>Arrays that are automatically indexed: $fruits = ['apples', 'oranges', 'bananas];</li>
+                <li>Associative arrays: $fruit = array("1"=>"apple", "2"=>"oranges", "3"=>"bananas");</li>
+            </ol>
+        </li>
+        <li>
+            <p>Q: How do you store the results of print_r() to a variable?</p>
+            <p>A: Call the built-in function 'print_r and pass in a variable as an argument.</p>
+            <ul>
+                <li>
+                    $fruit = 'apple';</br>
+                    print_r($fruit);
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Q: What is the var_dump function? How is it different than print_r?</p>
+            <p>A: var_dump is a built in function that prints an argument passed to it, along with the
+                arguments type and value.</br> print_r just displays the content of the argument, i.e., string, array etc. and does not
+                include type or value information.
+            </p>
+        </li>
+        <li>
+            <p>Q: What is dynamic typing? Describe some advantages and disadvantages</p>
+            <p>A: If a programming language is dynamically typed, it means that a variables data type is checked during
+                run-time as opposed to when being compiled. An advantage is that the programming process can be sped up
+                somewhat as the programmer does not have to manually declare data types for all variables.
+                A disadvantage is that if there is a type-error, it won't be caught until the program is trying to run, rather
+                than when it is being compiled.
+            </p>
+        </li>
+        <li>
+            <p>Q: What is the output of the following programs?</p>
+            <p>A:
+                <ol>
+                    <li>
+                        int(1) string(7) "just no" int(2) int(2)</br>
+                        First x is declared as 1, then printed with var_dump. Then y and z are assigned to the value of x + x.
+                        Then x is reassigned to the string "just no." Then all 3 are printed out using var_dump.
+                        I didn't understand how y and z were being assigned until I printed the program.
+                    </li>
+                    <li>
+                        Array ( [2] => 0 [Melissa] => 1 [0] => 2 ) array(3) { [2]=> int(0) ["Melissa"]=> int(1) [0]=> int(2) } string(55) "Array ( [2] => 0 [Melissa] => 1 [0] => 2 ) " </br>
+                        First even_numbers is assigned to an empty array. Then an associative array is created using keys and values.
+                        The array is then printed and then var_dumped. Finally var_dump is called on print_r of the array.</br>
+                        I anticipated most of what was going to happen, but found it difficult to anticipate what calling var_dump on print_r would do.
+
+                    </li>
+                </ol>
+            </p>
+        </li>
+    </ol>
+
+</main>
+<footer class="main-footer">
+    <nav>
+        <ul class="main-footer__links">
+            <li class="main-footer__link">
+                <a href="#">Contact</a>
+            </li>
+            <li class="main-footer__link">
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+
+</html>
