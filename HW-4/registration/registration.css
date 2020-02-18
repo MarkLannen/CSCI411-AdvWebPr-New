@@ -4,13 +4,21 @@ main {
     margin-top: 5rem;
 }
 
-/*label {*/
-/*    margin-bottom: -1rem;*/
-/*}*/
+.register-page {
+    margin: 75px auto;
+}
+
+.form-table {
+    text-align: center;
+}
 
 .register-form {
     margin: auto;
     width: 25rem;
+}
+
+#title {
+    margin-bottom: 1rem;
 }
 
 .register-title {
@@ -30,8 +38,11 @@ main {
 .register-form label,
 .register-form input,
 .register-form select {
-    margin-top: 1rem;
     width: 100%;
+}
+
+.register-form input {
+    margin-bottom: 1rem;
 }
 
 .register-form input:focus,

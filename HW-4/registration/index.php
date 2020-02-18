@@ -39,21 +39,38 @@
     </nav>
 </header>
 
-
-
+<?php
+$title = $_POST['title'];
+$firstName = $_POST['firstName'];
+$lastName = $_POST['lastName'];
+$emailAddress = $_POST['emailAddress'];
+?>
 <main class="register-page">
     <h1 class="register-title">Welcome to Pencils Pencils Pencils!!!</h1>
+    <div class="form-table">
+        <table class="form-table">
+            <thead>
+            <tr><th>Title</th><th>First Name</th><th>Last Name<th>Email Address</th></tr>
+            </thead>
+            <tbody>
+            <tr>
+                <?php
+                    if(isset($_POST['submit']))
+                ?>
+                <td><?php echo $title?></td>
+                <td><?php echo $firstName?></td>
+                <td><?php echo $lastName?></td>
+                <td><?php echo $emailAddress?></td>
+                
+            </tr>
+            </tbody>
+        </table>
 
-    <?php
-    printFormResults($_POST);
-    ?>
+
+    </div>
 </main>
 
-<?php
-function printFormResults($array) {
-print_r($array);
-};
-?>
+
 
 <footer class="main-footer">
     <nav>
