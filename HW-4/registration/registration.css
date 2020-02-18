@@ -8,8 +8,27 @@ main {
     margin: 75px auto;
 }
 
+.table-head {
+    background-color: #ccc;
+}
+
+.table-container {
+}
+
 .form-table {
+    margin: 50px auto;
     text-align: center;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.table-row-bgcolor {
+    background-color: azure;
 }
 
 .register-form {

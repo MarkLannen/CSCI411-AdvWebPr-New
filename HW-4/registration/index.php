@@ -47,26 +47,33 @@ $emailAddress = $_POST['emailAddress'];
 ?>
 <main class="register-page">
     <h1 class="register-title">Welcome to Pencils Pencils Pencils!!!</h1>
-    <div class="form-table">
+    <div class="table-container">
         <table class="form-table">
-            <thead>
-            <tr><th>Title</th><th>First Name</th><th>Last Name<th>Email Address</th></tr>
+            <thead class="table-head">
+                <tr><th>Field</th><th>Value</th></tr>
             </thead>
             <tbody>
-            <tr>
-                <?php
-                    if(isset($_POST['submit']))
-                ?>
-                <td><?php echo $title?></td>
-                <td><?php echo $firstName?></td>
-                <td><?php echo $lastName?></td>
-                <td><?php echo $emailAddress?></td>
-                
-            </tr>
+                <tr>
+<!--                    --><?php
+//                        if(isset($_POST['submit']))
+//                    ?>
+                    <td>Title</td>
+                    <td><?php echo $title?></td>
+                </tr>
+                <tr class="table-row-bgcolor">
+                    <td>First Name</td>
+                    <td><?php echo $firstName?></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><?php echo $lastName?></td>
+                </tr>
+                <tr class="table-row-bgcolor">
+                    <td>Email Address</td>
+                    <td><?php echo $emailAddress?></td>
+                </tr>
             </tbody>
         </table>
-
-
     </div>
 </main>
 
