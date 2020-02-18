@@ -40,12 +40,14 @@
 </header>
 
 <?php
-$title = $_POST['title'];
-$firstName = $_POST['firstName'];
-$lastName = $_POST['lastName'];
-$emailAddress = $_POST['emailAddress'];
+if(isset($_POST['submit'])) {
+    $title = $_POST['title'];
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
+    $emailAddress = $_POST['emailAddress'];
+}
 ?>
-<main class="register-page">
+<main class="registration-results">
     <h1 class="register-title">Welcome to Pencils Pencils Pencils!!!</h1>
     <div class="table-container">
         <table class="form-table">
@@ -55,7 +57,7 @@ $emailAddress = $_POST['emailAddress'];
             <tbody>
                 <tr>
 <!--                    --><?php
-//                        if(isset($_POST['submit']))
+                        if(isset($_POST['submit']))
 //                    ?>
                     <td>Title</td>
                     <td><?php echo $title?></td>
@@ -76,22 +78,20 @@ $emailAddress = $_POST['emailAddress'];
         </table>
     </div>
 </main>
-
-
-
-<footer class="main-footer">
-    <nav>
-        <ul class="main-footer__links">
-            <li class="main-footer__link">
-                <a href="#">Contact</a>
-            </li>
-            <li class="main-footer__link">
-                <a href="#">Privacy Policy</a>
-            </li>
-        </ul>
-    </nav>
-</footer>
-
+<div class="footer-container">
+    <footer class="main-footer">
+        <nav>
+            <ul class="main-footer__links">
+                <li class="main-footer__link">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="main-footer__link">
+                    <a href="#">Privacy Policy</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</div>
 </body>
 
 </html>
