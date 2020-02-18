@@ -39,14 +39,14 @@
     </nav>
 </header>
 
-<?php
 
-
-?>
 
 <main class="register-page">
     <h1 class="register-title">Welcome to Pencils Pencils Pencils!!!</h1>
 
+    <?php
+    printFormResults($_POST);
+    ?>
 </main>
 
 <?php
