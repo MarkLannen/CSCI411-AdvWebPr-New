@@ -50,7 +50,7 @@ $emailAddress = $_POST['emailAddress'];
     <div class="table-container">
         <table class="form-table">
             <thead class="table-head">
-                <tr><th>Field</th><th>Value</th></tr>
+                <tr><th>Category</th><th>Your Info</th></tr>
             </thead>
             <tbody>
                 <tr>
