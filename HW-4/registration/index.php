@@ -50,9 +50,9 @@
 </main>
 
 <?php
-//function printFormResults($array) {
-////    print_r($array);
-////};
+function printFormResults($array) {
+print_r($array);
+};
 ?>
 
 <footer class="main-footer">
