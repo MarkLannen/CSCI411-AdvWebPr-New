@@ -40,7 +40,7 @@
     </nav>
 </header>
 <h1 class="register-title-top">Welcome to Pencils Pencils Pencils!!!</h1>
-<h3 class="top-h3">(generated with a foreach loop)</h3>
+<h3 class="top-h3">(Table generated with a foreach loop)</h3>
 <div class="php-table__container">
 
 <?php
@@ -72,7 +72,7 @@ if(isset($_POST['submit'])) {
 </div>
 <main class="registration-results">
     <h1 class="register-title">Welcome to Pencils Pencils Pencils!!!</h1>
-    <h3>(generated manually)</h3>
+    <h3>(Table generated manually)</h3>
     <div class="table-container">
         <table class="form-table">
             <thead class="table-head">
@@ -99,6 +99,20 @@ if(isset($_POST['submit'])) {
         </table>
     </div>
 </main>
+
+<section class="explanatory-section">
+    <p>I used the post method in my form and created a php page and put the relative url in to the action
+    attribute of the form. </p>
+    <p>The first table I built I did manually and just created a variable for each of the form inputs. I then
+    added variable in to the appropriate table cell and styled it using css</p>
+    <p>The second table I tried to build more dynamically. I wrote an if statement that checked if the 'super global variable' $_POST
+    had a value of 'submit' (which meant that my form button had been clicked). For reference I wrote a print_r function that
+    passed in the variable as an argument. If it had been clicked, I then looped through the contents of the array
+    with a foreach loop and created the html table elements during each iteration of the loop. I started the code,
+    but needed to work with Addison Boyer (the CS tutor) to debug it and make it work.</p>
+    <p>I've still got some work left to do on the second table in terms of making headers for accessibility and styling
+    etc., but I was pleased just to get it to work!</p>
+</section>
 <div class="footer-container">
     <footer class="main-footer">
         <nav>
