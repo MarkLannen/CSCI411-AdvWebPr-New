@@ -15,6 +15,7 @@
 
 </head>
 <body>
+
 <header class="main-header">
     <div>
         <a href="../index.html" class="main-header__brand">
@@ -38,17 +39,40 @@
         </ul>
     </nav>
 </header>
+<h1 class="register-title-top">Welcome to Pencils Pencils Pencils!!!</h1>
+<h3 class="top-h3">(generated with a foreach loop)</h3>
+<div class="php-table__container">
 
 <?php
+
 if(isset($_POST['submit'])) {
+    //print_r($_POST);
+
+    $table = "<table class='php-table'><tr>"; //Manually add in headers
+    // Headers
+    foreach($_POST as $key => $value){
+
+
+        if($key != 'submit'){
+            $table = $table."<td class='table-row-bgcolor'>".$key."</td>"."<td>".$value."</td>";
+        }
+        $table = $table."</tr>";
+    }
+    $table = $table."</table>";
+    echo $table;
+    }
+?>
+
+<?php
     $title = $_POST['title'];
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
     $emailAddress = $_POST['emailAddress'];
-}
 ?>
+</div>
 <main class="registration-results">
     <h1 class="register-title">Welcome to Pencils Pencils Pencils!!!</h1>
+    <h3>(generated manually)</h3>
     <div class="table-container">
         <table class="form-table">
             <thead class="table-head">
@@ -56,9 +80,6 @@ if(isset($_POST['submit'])) {
             </thead>
             <tbody>
                 <tr>
-<!--                    --><?php
-                        if(isset($_POST['submit']))
-//                    ?>
                     <td>Title</td>
                     <td><?php echo $title?></td>
                 </tr>

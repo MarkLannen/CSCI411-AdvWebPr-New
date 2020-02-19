@@ -4,6 +4,33 @@ main {
     margin-top: 5rem;
 }
 
+.php-table__container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.php-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+.register-title-top {
+    margin-top: 100px;
+    margin-bottom: -50px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ff5454;
+}
+
+h3 {
+    text-align: center;
+}
+
+.top-h3 {
+    margin-top: 70px;
+}
+
 .register-page {
     margin: 75px auto;
 }
@@ -60,7 +87,7 @@ table, th, td {
     width: 100%;
 }
 
-.register-form input {
+.register-form input, select {
     margin-bottom: 1rem;
 }
 
