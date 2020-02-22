@@ -118,6 +118,9 @@ p::first-letter {
 }
 
 .main-footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
     background: black;
     padding: 2rem;
     margin-top: 3rem;
