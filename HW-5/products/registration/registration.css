@@ -1,0 +1,61 @@
+main {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1rem;
+    margin-top: 5rem;
+}
+
+label {
+    margin-bottom: -1rem;
+}
+
+.register-form {
+    margin: auto;
+    width: 25rem;
+}
+
+.register-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ff5454;
+}
+
+.register-form {
+    padding: 1rem;
+}
+
+.register-form label {
+    font-weight: bold;
+}
+
+.register-form label,
+.register-form input,
+.register-form select {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+    outline: none;
+    background: #d8f3df;
+    border-color: #2ddf5c;
+}
+
+.register-form input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+}
+
+.agree-terms__checkbox {
+    margin-right: 1rem;
+}
+
+.register-form button {
+    background-color: #cc003b;
+    color: white;
+    margin-top: 1rem;
+    padding:  .5rem 1rem;
+    font-size: 1.5rem;
+    border: none;
+}
