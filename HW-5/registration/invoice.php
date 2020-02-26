@@ -3,12 +3,7 @@ require('fpdf.php');
 
 class invoicePDF extends FPDF {
 
-
-
-
     function header() {
-
-
 
         $this -> Image('../images/ppp-logo-150px.png');
         $this -> SetFont('Arial','B',24);
@@ -26,31 +21,31 @@ class invoicePDF extends FPDF {
     }
 
     function headerTable() {
-        $this -> Ln(20);
+        $this -> Ln(0);
+
         $this -> SetFont('Arial','B',12);
-        $this -> Cell(20, 10, 'Product', 1,0, 'C');
+        $this -> Cell(60, 10, 'First Name', 1,0, 'C');
+        $this -> Cell(60, 10, 'Last Name', 1,0, 'C');
+        $this -> Cell(60, 10, 'Email Address', 1,0, 'C');
     }
 
-    function inputs($firstName) {
+    function inputs($firstName, $lastName, $emailAddress) {
         $this -> Ln(20);
+
         $this -> SetFont('Arial','B',12);
-        $this -> Cell(20, 10, $firstName, 1,0, 'C');
+        $this -> Cell(60, 10, $firstName, 1,0, 'C');
+        $this -> Cell(60, 10, $lastName, 1,0, 'C');
+        $this -> Cell(60, 10, $emailAddress, 1,0, 'C');
     }
-
-
-
 
 }
 
-
-
-
 $firstName = $_POST["firstName"];
+$lastName = $_POST["lastName"];
+$emailAddress = $_POST["emailAddress"];
 
 $pdf = new invoicePDF();
 $pdf->AddPage();
-//$pdf->SetFont('Arial','B',16);
-//$pdf->Cell(40,10,'Hello World!');
 $pdf->headerTable();
-$pdf->inputs($firstName);
+$pdf->inputs($firstName, $lastName, $emailAddress);
 $pdf->Output();
