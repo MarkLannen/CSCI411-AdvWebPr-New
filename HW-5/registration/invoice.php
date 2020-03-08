@@ -5,7 +5,7 @@ class invoicePDF extends FPDF {
 
     function header() {
 
-        $this -> Image('../images/ppp-logo-150px.png');
+        $this -> Image('../images/ppp-logo-150px.jpg');
         $this -> SetFont('Arial','B',24);
         $this -> Cell(300, -50, 'Invoice', 0,0, 'C');
         $this -> Ln(20);
