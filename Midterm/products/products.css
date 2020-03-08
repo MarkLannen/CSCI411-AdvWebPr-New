@@ -1,0 +1,15 @@
+.thumbnails__main {
+    margin: 0 2rem;
+}
+
+.thumbnails a {
+    text-decoration: none;
+}
+
+.thumbnail {
+    margin: 1rem 2rem;
+}
+
+.thumbnail:hover {
+    box-shadow: 8px 8px 6px rgba(100, 100, 100, 0.5);
+}

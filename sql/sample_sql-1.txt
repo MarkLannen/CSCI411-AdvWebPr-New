@@ -1,0 +1,159 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\markl> pwd
+
+Path
+----
+C:\Users\markl
+
+
+PS C:\Users\markl> ssh ml120499@webdev.cs.umt.edu
+ml120499@webdev.cs.umt.edu's password:
+
+Notice: This system is the property of The University of Montana and is subject to the MUS security, monitoring, and appropriate-use policies.
+Unauthorized use is a violation of 45-6-311, MCA and Montana University System policies.
+By continuing to use this system, you indicate your awareness of and consent to these terms and conditions of use.
+
+LOG OFF IMMEDIATELY if you do not agree to the conditions stated in this warning.
+
+[ml120499@webdev ~]$ ls
+public_html
+[ml120499@webdev ~]$ cd public_html/
+[ml120499@webdev public_html]$ ls
+[ml120499@webdev public_html]$ cd
+[ml120499@webdev ~]$ mysqll
+-bash: mysqll: command not found
+[ml120499@webdev ~]$ mysql
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 3989
+Server version: 10.4.12-MariaDB MariaDB Server
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| ml120499           |
++--------------------+
+2 rows in set (0.017 sec)
+
+MariaDB [(none)]> use ml120499
+Database changed
+MariaDB [ml120499]> use ml120499;
+Database changed
+MariaDB [ml120499]> show tables
+    -> CREATE TABLE auth (userID varchar20), password VARCHAR (23));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'CREATE TABLE auth (userID varchar20), password VARCHAR (23))' at line 2
+MariaDB [ml120499]> show table
+    -> show table auth
+    -> CREATE TABLE auth ((userID varchar20), password VARCHAR (23));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show table auth
+CREATE TABLE auth ((userID varchar20), password VARCHAR (23))' at line 2
+MariaDB [ml120499]> CREATE TABLE auth (userID varchar(20), password VARCHAR (23));
+Query OK, 0 rows affected (0.066 sec)
+
+MariaDB [ml120499]> show table
+    -> show table auth
+    -> show tables
+    -> show tables;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'show table auth
+show tables
+show tables' at line 2
+MariaDB [ml120499]> show tables;
++--------------------+
+| Tables_in_ml120499 |
++--------------------+
+| auth               |
++--------------------+
+1 row in set (0.001 sec)
+
+MariaDB [ml120499]> alter auth add unique (userID) at line 1
+    -> alter auth add unique (userID)' at line 1
+    '> ;
+    '> show tables;
+    '> show tables;
+    '> ;
+    '> ';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'auth add unique (userID) at line 1
+alter auth add unique (userID)' at line 1
+;
+s' at line 1
+MariaDB [ml120499]> show tables;
++--------------------+
+| Tables_in_ml120499 |
++--------------------+
+| auth               |
++--------------------+
+1 row in set (0.001 sec)
+
+MariaDB [ml120499]> alter table auth add unique (userID);
+Query OK, 0 rows affected (0.064 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [ml120499]> INSERT INTO auth (username, password) values ('admin', 'adminpass');
+ERROR 1054 (42S22): Unknown column 'username' in 'field list'
+MariaDB [ml120499]> INSERT INTO auth (userID, password) values ('admin', 'adminpass');
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [ml120499]> select * from auth;
++--------+-----------+
+| userID | password  |
++--------+-----------+
+| admin  | adminpass |
++--------+-----------+
+1 row in set (0.001 sec)
+
+MariaDB [ml120499]> insert into auth (userID, password) values ('MarkLannen', 'Guest1234');
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [ml120499]> select * from auth
+    -> select * from auth;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'select * from auth' at line 2
+MariaDB [ml120499]> select * from auth;
++------------+-----------+
+| userID     | password  |
++------------+-----------+
+| admin      | adminpass |
+| MarkLannen | Guest1234 |
++------------+-----------+
+2 rows in set (0.000 sec)
+
+MariaDB [ml120499]> select * from auth where userID = 'admin';
++--------+-----------+
+| userID | password  |
++--------+-----------+
+| admin  | adminpass |
++--------+-----------+
+1 row in set (0.001 sec)
+
+MariaDB [ml120499]> select * from auth where userID = 'admin'; AND password = 'adminpass';
++--------+-----------+
+| userID | password  |
++--------+-----------+
+| admin  | adminpass |
++--------+-----------+
+1 row in set (0.001 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND password = 'adminpass'' at line 1
+MariaDB [ml120499]> select * from auth where userID = 'admin' AND password = 'adminpass';
++--------+-----------+
+| userID | password  |
++--------+-----------+
+| admin  | adminpass |
++--------+-----------+
+1 row in set (0.001 sec)
+
+MariaDB [ml120499]> select userID, password from auth where userID = 'admin' AND password = 'adminpass';
++--------+-----------+
+| userID | password  |
++--------+-----------+
+| admin  | adminpass |
++--------+-----------+
+1 row in set (0.000 sec)
+
+MariaDB [ml120499]>
