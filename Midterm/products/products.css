@@ -2,6 +2,10 @@
     margin: 0 2rem;
 }
 
+.thumbnails {
+    margin-top: 7rem;
+}
+
 .thumbnails a {
     text-decoration: none;
 }
@@ -12,4 +16,13 @@
 
 .thumbnail:hover {
     box-shadow: 8px 8px 6px rgba(100, 100, 100, 0.5);
+}
+
+.main-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: black;
+    padding: 2rem;
+    margin-top: 3rem;
 }
