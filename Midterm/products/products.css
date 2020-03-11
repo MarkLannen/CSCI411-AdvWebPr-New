@@ -18,17 +18,21 @@ ul {
     box-shadow: 8px 8px 6px rgba(100, 100, 100, 0.5);
 }
 
+/*Found this nifty trick of using an image as a checkbox from Stack overflow:*/
+/*https://stackoverflow.com/questions/30663562/use-images-like-checkboxes/30663705
+I combined the two solutions to suit my needs
+*/
+
 li {
     display: inline-block;
 }
 
-label:before {
+label::before {
     content: url("https://cdn1.iconfinder.com/data/icons/windows8_icons_iconpharm/26/unchecked_checkbox.png");
     position: absolute;
-    /*z-index: 100;*/
 }
 
-:checked+label:before {
+:checked+label::before {
     content: url("https://cdn1.iconfinder.com/data/icons/windows8_icons_iconpharm/26/checked_checkbox.png");
 }
 input[type=checkbox] {
