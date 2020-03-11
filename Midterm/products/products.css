@@ -6,7 +6,7 @@
     margin-top: 7rem;
 }
 
-.thumbnails a {
+ul {
     text-decoration: none;
 }
 
@@ -18,8 +18,31 @@
     box-shadow: 8px 8px 6px rgba(100, 100, 100, 0.5);
 }
 
+li {
+    display: inline-block;
+}
+
+label:before {
+    content: url("https://cdn1.iconfinder.com/data/icons/windows8_icons_iconpharm/26/unchecked_checkbox.png");
+    position: absolute;
+    /*z-index: 100;*/
+}
+
+:checked+label:before {
+    content: url("https://cdn1.iconfinder.com/data/icons/windows8_icons_iconpharm/26/checked_checkbox.png");
+}
+input[type=checkbox] {
+    display: none;
+}
+
+:checked+label img {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px #333;
+    z-index: -1;
+}
+
 .main-footer {
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     bottom: 0;
     background: black;
